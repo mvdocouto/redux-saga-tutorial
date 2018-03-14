@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
 import  createSagaMiddleware from 'redux-saga'
 
-import Counter from './Counter'
-import reducer from './reducers'
-import rootSaga from './sagas'
+import Counter from './components/Counter'
+import reducer from './reducers/reducers'
+import rootSaga from './sagas/sagas'
 
 const sagaMidleware = createSagaMiddleware()
 const store = createStore(
